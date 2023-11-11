@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+	<!-- My CSS -->
+	<link rel="stylesheet" href="style.css">
+
+	<title>Article - Downloads</title>
+	<link rel="shortcut icon" href="/Article-logo.png">
+</head>
+<body>
+
+
+	<!-- SIDEBAR -->
+	<section id="sidebar" class="hide">
+		<a href="#" class="brand">
+			<i class='bx bx-cloud-download' ></i>
+			<span class="text">Article</span>
+		</a>
+		<ul class="side-menu top">
+			<li>
+				<a href="/dashboard.html">
+					<i class='bx bxs-dashboard' ></i>
+					<span class="text">Dashboard</span>
+				</a>
+			</li>
+			<li>
+				<a href="/schedule.html">
+					<i class='bx bxs-time'></i>
+					<span class="text">Schedule</span>
+				</a>
+			</li>
+			<li class="active">
+				<a href="/downloads.html">
+					<i class='bx bx-cloud-download' ></i>
+					<span class="text">Downloads</span>
+				</a>
+			</li>
+			<li>
+				<a href="/results.html">
+					<i class='bx bxs-doughnut-chart' ></i>
+					<span class="text">Results</span>
+				</a>
+			</li>
+			 
+		</ul>
+	</section>
+	<!-- SIDEBAR -->
+
+
+
+	<!-- CONTENT -->
+	<section id="content">
+		<!-- NAVBAR -->
+		<nav>
+			<i class='bx bx-menu' ></i>
+		</nav>
+		<!-- NAVBAR -->
+
+		<!-- MAIN -->
+		<main>
+			<div class="head-title">
+				<div class="left">
+					<h1>Downloads</h1>
+					<ul class="breadcrumb">
+						<li>
+							<a href="#">Dashboard</a>
+						</li>
+						<li><i class='bx bx-chevron-right' ></i></li>
+						<li>
+							<a class="active" href="#">Downloads</a>
+						</li>
+					</ul>
+				</div>
+				<a href="/downloads/article kit ful.pdf" class="btn-download">
+					<i class='bx bxs-cloud-download' ></i>
+					<span class="text">Download Full Kit</span>
+				</a>
+			</div>
+
+			<ul class="box-info">
+				<li>
+					<span class="text">
+						<a href="/downloads/Thaniya non stage schedule.pdf"><h3 >THANIYA NON STAGE SCHEDULE <span class="material-symbols-sharp">
+							download
+							</span></h3></a>
+						
+					</span>
+				</li>
+				<li>
+					<span class="text">
+						<a href="/downloads/Thaniya stage schedule.pdf"><h3 >THANIYA STAGE SCHEDULE <span class="material-symbols-sharp">
+							download
+							</span></h3></a>
+						
+					</span>
+				</li>
+				<li>
+					<span class="text">
+						<a href="/downloads/Thanawiyya program list.pdf"><h3 >THANAWIYYA PROGRAM LIST <span class="material-symbols-sharp">
+							download
+							</span></h3></a>
+						
+					</span>
+				</li>
+				<li>
+					<span class="text">
+						<a href="/downloads/Thanawiyya non stage programs.pdf"><h3 >THANAWIYYA NON STAGE PROGRAMS <span class="material-symbols-sharp">
+							download
+							</span></h3></a>
+						
+					</span>
+				</li>
+				<li>
+					<span class="text">
+						<a href="/downloads/Thanawiyya stage schedule.pdf"><h3 >THANAWIYYA STAGE SCHEDULE <span class="material-symbols-sharp">
+							download
+							</span></h3></a>
+						
+					</span>
+				</li>
+				<li>
+					<span class="text">
+						<a href="/downloads/Kulliyya programs star.pdf"><h3 >KULLIYYA STAR PROGRAMS<span class="material-symbols-sharp">
+							download
+							</span></h3></a>
+						
+					</span>
+				</li>
+				<li>
+					<span class="text">
+						<a href="/downloads/Kulliyya programs star.pdf"><h3 >KULLIYYA STAR PROGRAMS<span class="material-symbols-sharp">
+							download
+							</span></h3></a>
+						
+					</span>
+				</li>
+				<li>
+					<span class="text">
+						<a href="/downloads/Kulliyya stage programs.pdf"><h3 >KULLIYYA STAGE PROGRAMS<span class="material-symbols-sharp">
+							download
+							</span></h3></a>
+						
+					</span>
+				</li>
+			</ul>
+
+		</main>
+		<!-- MAIN -->
+	</section>
+	<!-- CONTENT -->
+	
+	<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+	<script src="script.js"></script>
+	<script>
+		const ctx = document.getElementById('myChart');
+	  
+		new Chart(ctx, {
+		  type: 'doughnut',
+		  data: {
+			labels: ['Eqality', 'Liberty', 'Fraternity'],
+			datasets: [{
+			  label: 'Points',
+			  data: [12, 19, 24],
+			  borderWidth: 1
+			}]
+		  },
+		  options: {
+			scales: {
+			  y: {
+				beginAtZero: true
+			  }
+			}
+		  }
+		});
+	  </script>
+	  
+</body>
+</html>
