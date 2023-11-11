@@ -65,37 +65,37 @@
         font-size: 16px;
     }
 </style>
-<script>
-    // Function to show the ad
-    function showAd() {
-        document.getElementById('ad-container').style.display = 'flex';
-    }
 
-    // Function to hide the ad
-    function hideAd() {
-        document.getElementById('ad-container').style.display = 'none';
-    }
-
-    // Function to handle the skip button click
-    function skipAd() {
-        hideAd();
-    }
-
-    // Initialize the page
-    document.addEventListener('DOMContentLoaded', function () {
-        // Show the ad when the page loads
-        showAd();
-    });
-
-    // Add event listener to the skip button
-    document.getElementById('skip-button').addEventListener('click', skipAd);
-</script>
 <body class="body-wrapper"> 
    <div id="ad-container">
         <img id="ad-image" src="/assets/Ads/yara.jpg" alt="Ad Image">
         <button id="skip-button">Skip Ad</button>
     </div>
+    <script>
+        // Function to show the ad
+        function showAd() {
+            document.getElementById('ad-container').style.display = 'flex';
+        }
     
+        // Function to hide the ad
+        function hideAd() {
+            document.getElementById('ad-container').style.display = 'none';
+        }
+    
+        // Function to handle the skip button click
+        function skipAd() {
+            hideAd();
+        }
+    
+        // Initialize the page
+        document.addEventListener('DOMContentLoaded', function () {
+            // Show the ad when the page loads
+            showAd();
+        });
+    
+        // Add event listener to the skip button
+        document.getElementById('skip-button').addEventListener('click', skipAd);
+    </script>
 
     <header class="header-1 style-2">
         <div class="container">
